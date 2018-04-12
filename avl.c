@@ -21,7 +21,7 @@ FILE *arquivo;
 int myIndex;
 produto prod;
 
-//Protótipo das funções
+//ProtÃ³tipo das funÃ§Ãµes
 void imprimeMenu(void);
 int height(no *N);
 int max(int a, int b);
@@ -96,7 +96,7 @@ int main(){
 }  //FIM FUNCAO MAIN
 
 void imprimeMenu(){
-    printf("\t SUPERMERCADO KODEL COX: CONTROLE E REPOSICAO DE ESTOQUE\n");
+    printf("\t SUPERMERCADO: CONTROLE E REPOSICAO DE ESTOQUE\n");
     printf("1. Incluir produto ao estoque\n");
     printf("2. Excluir produto do estoque\n");
     printf("3. Alterar valor e/ou quantidade em estoque de um produto\n");
@@ -199,7 +199,7 @@ no* insert(no* raiz, char nome[], int myIndex){
 }
 
 int incluiProduto(){
-    printf("\t SUPERMERCADO KODEL COX: CONTROLE E REPOSICAO DE ESTOQUE\n");
+    printf("\t SUPERMERCADO: CONTROLE E REPOSICAO DE ESTOQUE\n");
     printf("\t\t\tINCLUSAO DE PRODUTO:\n");
     printf("Nome do produto: ");
     fgets(prod.nome, 30, stdin);
@@ -313,7 +313,7 @@ no* searchAndDelete(no* raiz, char nome[]){
 }
 
 void exclueProduto(){
-    printf("\t SUPERMERCADO KODEL COX: CONTROLE E REPOSICAO DE ESTOQUE\n");
+    printf("\t SUPERMERCADO: CONTROLE E REPOSICAO DE ESTOQUE\n");
     printf("\t\t\tEXCLUSAO DE PRODUTO:\n\n");
     char nome[30] = " ";
     printf("Nome do produto que deseja deletar: ");
@@ -387,7 +387,7 @@ no* searchAndEdit(no *aux, char nome[]){
 }
 
 void alteraProduto(){
-    printf("\t SUPERMERCADO KODEL COX: CONTROLE E REPOSICAO DE ESTOQUE\n");
+    printf("\t SUPERMERCADO: CONTROLE E REPOSICAO DE ESTOQUE\n");
     printf("\t\t\tALTERACAO DE PRODUTO:\n\n");
     printf("Digite o nome do produto que deseja alterar: ");
     char nome[30];
@@ -424,7 +424,7 @@ no* searchKey(no *aux, char nome[]){
 }
 
 void buscaProduto(){
-    printf("\t SUPERMERCADO KODEL COX: CONTROLE E REPOSICAO DE ESTOQUE\n");
+    printf("\t SUPERMERCADO: CONTROLE E REPOSICAO DE ESTOQUE\n");
     printf("\t\t\tBUSCA POR PRODUTO ESPECIFICO:\n\n");
     printf("Digite o nome do produto que deseja buscar: ");
     char nome[30];
@@ -460,7 +460,7 @@ void searchAll(no *raiz){
 }
 
 void buscaTotal(void){
-    printf("\t SUPERMERCADO KODEL COX: CONTROLE E REPOSICAO DE ESTOQUE\n");
+    printf("\t SUPERMERCADO: CONTROLE E REPOSICAO DE ESTOQUE\n");
     printf("\t\t\tBUSCA TOTAL:\n\n");
     no *aux = root;
     searchAll(root);
